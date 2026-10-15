@@ -1,0 +1,77 @@
+ /* selectores */
+ * {
+     /* color: blue; */
+ }
+
+
+ html {
+     font-size: 50px;
+     font-size: 30px;
+ }
+
+ body {
+     color: blue;
+     font-family: Montserrat;
+     font-size: 1.1rem;
+     /* 55px; */
+     font-size: 1.1rem;
+     /* 33px; */
+ }
+
+ h1 {
+     color: aqua;
+     font-size: 100px;
+     font-weight: 100;
+ }
+
+ p {
+     font-family: monospace;
+     font-size: 18px;
+ }
+
+ ul>li>a {
+     font-weight: 500;
+ }
+
+ ul>li>a:hover {
+     font-weight: 900;
+     color: peachpuff;
+ }
+
+ /* por favor esto nunca: */
+ /* *:hover {
+     background-color: red;
+ } */
+
+ ul>li>a:active {
+     font-size: 40px;
+     color: blueviolet;
+ }
+
+ #logo {
+     font-size: 50px;
+     color: red;
+     font-weight: 900;
+ }
+
+
+ .logo {
+     background-color: #85de2c8a;
+     color: #457713;
+ }
+
+ .content {
+     background-color: rebeccapurple;
+     color: white;
+ }
+
+ .important {
+     border: 3px solid gold;
+ }
+
+
+
+ /* {
+            font-size: 50px;
+            color: red;
+        } */
