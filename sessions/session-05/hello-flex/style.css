@@ -93,3 +93,24 @@ a {
 .shiny {
     background-color: rgb(86, 0, 0);
 }
+
+article.shiny {
+    /* display: none; */
+    /* visibility: hidden; */
+    opacity: 0.5;
+
+}
+
+.hero {
+    font-size: 100px;
+    /* width: 80%; */
+    margin: 0 auto;
+    background-color: aqua;
+    /* overflow: hidden; */
+}
+
+.hero>span {
+    display: inline-block;
+    background-color: bisque;
+    width: calc(100vw - 30px);
+}
