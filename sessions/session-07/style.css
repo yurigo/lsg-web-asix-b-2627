@@ -1,0 +1,27 @@
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: .33rem;
+    min-height: 200px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 30px 1fr);
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(4, 30px 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .grid {
+        grid-template-columns: repeat(7, 30px 1fr);
+    }
+}

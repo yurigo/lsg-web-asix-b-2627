@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+
+        <form action="./saludo.html" method="get">
+
+            <label for="nameText">nombre</label>
+            <input id="nameText" name="nameNameText" type="text" disabled>
+
+            <label for="emailInput">email</label>
+            <input id="emailInput" name="emailNameInput" type="email" required>
+
+            <label for="edadInput">edad</label>
+            <input id="edadInput" type="number" name="edadNameInput" readonly>
+
+            <label for="passInput">PASS</label>
+            <input id="passInput" type="password" name="passNameInput">
+
+            <label for="colorInput">tu color favorito</label>
+            <input id="colorInput" type="color" name="colorNameInput">
+
+            <!-- <input type="button" value=""> -->
+            <button type="submit">enviar</button>
+            <button type="reset">borrar</button>
+
+
+            <fieldset class="grid">
+                <legend>Selecciona tus Pokémon capturados</legend>
+
+                <input id="bulbasaurCheckbox" name="pokeCheckbox" type="checkbox" value="bulbasaur">
+                <label for="bulbasaurCheckbox">bulbasaur</label>
+
+                <input id="ivysaurCheckbox" name="pokeCheckbox" type="checkbox" value="ivysaur">
+                <label for="ivysaurCheckbox">ivysaur</label>
+
+                <input id="venusaurCheckbox" name="pokeCheckbox" type="checkbox" value="venusaur">
+                <label for="venusaurCheckbox">venusaur</label>
+
+                <input id="charmanderCheckbox" name="pokeCheckbox" type="checkbox" value="charmander">
+                <label for="charmanderCheckbox">charmander</label>
+
+                <input id="charmeleonCheckbox" name="pokeCheckbox" type="checkbox" value="charmeleon">
+                <label for="charmeleonCheckbox">charmeleon</label>
+
+                <input id="charizardCheckbox" name="pokeCheckbox" type="checkbox" value="charizard">
+                <label for="charizardCheckbox">charizard</label>
+
+                <input id="squirtleCheckbox" name="pokeCheckbox" type="checkbox" value="squirtle">
+                <label for="squirtleCheckbox">squirtle</label>
+
+                <input id="wartortleCheckbox" name="pokeCheckbox" type="checkbox" value="wartortle">
+                <label for="wartortleCheckbox">wartortle</label>
+
+                <input id="blastoiseCheckbox" name="pokeCheckbox" type="checkbox" value="blastoise">
+                <label for="blastoiseCheckbox">blastoise</label>
+
+                <input id="caterpieCheckbox" name="pokeCheckbox" type="checkbox" value="caterpie">
+                <label for="caterpieCheckbox">caterpie</label>
+
+                <input id="metapodCheckbox" name="pokeCheckbox" type="checkbox" value="metapod">
+                <label for="metapodCheckbox">metapod</label>
+
+                <input id="butterfreeCheckbox" name="pokeCheckbox" type="checkbox" value="butterfree">
+                <label for="butterfreeCheckbox">butterfree</label>
+
+                <input id="weedleCheckbox" name="pokeCheckbox" type="checkbox" value="weedle">
+                <label for="weedleCheckbox">weedle</label>
+
+                <input id="kakunaCheckbox" name="pokeCheckbox" type="checkbox" value="kakuna">
+                <label for="kakunaCheckbox">kakuna</label>
+
+                <input id="beedrillCheckbox" name="pokeCheckbox" type="checkbox" value="beedrill">
+                <label for="beedrillCheckbox">beedrill</label>
+
+                <input id="pidgeyCheckbox" name="pokeCheckbox" type="checkbox" value="pidgey">
+                <label for="pidgeyCheckbox">pidgey</label>
+
+                <input id="pidgeottoCheckbox" name="pokeCheckbox" type="checkbox" value="pidgeotto">
+                <label for="pidgeottoCheckbox">pidgeotto</label>
+
+                <input id="pidgeotCheckbox" name="pokeCheckbox" type="checkbox" value="pidgeot">
+                <label for="pidgeotCheckbox">pidgeot</label>
+
+                <input id="rattataCheckbox" name="pokeCheckbox" type="checkbox" value="rattata">
+                <label for="rattataCheckbox">rattata</label>
+
+                <input id="raticateCheckbox" name="pokeCheckbox" type="checkbox" value="raticate">
+                <label for="raticateCheckbox">raticate</label>
+
+                <input id="spearowCheckbox" name="pokeCheckbox" type="checkbox" value="spearow">
+                <label for="spearowCheckbox">spearow</label>
+
+                <input id="fearowCheckbox" name="pokeCheckbox" type="checkbox" value="fearow">
+                <label for="fearowCheckbox">fearow</label>
+
+                <input id="ekansCheckbox" name="pokeCheckbox" type="checkbox" value="ekans">
+                <label for="ekansCheckbox">ekans</label>
+
+                <input id="arbokCheckbox" name="pokeCheckbox" type="checkbox" value="arbok">
+                <label for="arbokCheckbox">arbok</label>
+
+                <input id="pikachuCheckbox" name="pokeCheckbox" type="checkbox" value="pikachu">
+                <label for="pikachuCheckbox">pikachu</label>
+
+                <input id="raichuCheckbox" name="pokeCheckbox" type="checkbox" value="raichu">
+                <label for="raichuCheckbox">raichu</label>
+
+                <input id="sandshrewCheckbox" name="pokeCheckbox" type="checkbox" value="sandshrew">
+                <label for="sandshrewCheckbox">sandshrew</label>
+
+                <input id="sandslashCheckbox" name="pokeCheckbox" type="checkbox" value="sandslash">
+                <label for="sandslashCheckbox">sandslash</label>
+
+                <input id="nidoran-fCheckbox" name="pokeCheckbox" type="checkbox" value="nidoran-f">
+                <label for="nidoran-fCheckbox">nidoran-f</label>
+
+                <input id="nidorinaCheckbox" name="pokeCheckbox" type="checkbox" value="nidorina">
+                <label for="nidorinaCheckbox">nidorina</label>
+
+                <input id="nidoqueenCheckbox" name="pokeCheckbox" type="checkbox" value="nidoqueen">
+                <label for="nidoqueenCheckbox">nidoqueen</label>
+
+                <input id="nidoran-mCheckbox" name="pokeCheckbox" type="checkbox" value="nidoran-m">
+                <label for="nidoran-mCheckbox">nidoran-m</label>
+
+                <input id="nidorinoCheckbox" name="pokeCheckbox" type="checkbox" value="nidorino">
+                <label for="nidorinoCheckbox">nidorino</label>
+
+                <input id="nidokingCheckbox" name="pokeCheckbox" type="checkbox" value="nidoking">
+                <label for="nidokingCheckbox">nidoking</label>
+
+                <input id="clefairyCheckbox" name="pokeCheckbox" type="checkbox" value="clefairy">
+                <label for="clefairyCheckbox">clefairy</label>
+
+                <input id="clefableCheckbox" name="pokeCheckbox" type="checkbox" value="clefable">
+                <label for="clefableCheckbox">clefable</label>
+
+                <input id="vulpixCheckbox" name="pokeCheckbox" type="checkbox" value="vulpix">
+                <label for="vulpixCheckbox">vulpix</label>
+
+                <input id="ninetalesCheckbox" name="pokeCheckbox" type="checkbox" value="ninetales">
+                <label for="ninetalesCheckbox">ninetales</label>
+
+                <input id="jigglypuffCheckbox" name="pokeCheckbox" type="checkbox" value="jigglypuff">
+                <label for="jigglypuffCheckbox">jigglypuff</label>
+
+                <input id="wigglytuffCheckbox" name="pokeCheckbox" type="checkbox" value="wigglytuff">
+                <label for="wigglytuffCheckbox">wigglytuff</label>
+
+                <input id="zubatCheckbox" name="pokeCheckbox" type="checkbox" value="zubat">
+                <label for="zubatCheckbox">zubat</label>
+
+                <input id="golbatCheckbox" name="pokeCheckbox" type="checkbox" value="golbat">
+                <label for="golbatCheckbox">golbat</label>
+
+                <input id="oddishCheckbox" name="pokeCheckbox" type="checkbox" value="oddish">
+                <label for="oddishCheckbox">oddish</label>
+
+                <input id="gloomCheckbox" name="pokeCheckbox" type="checkbox" value="gloom">
+                <label for="gloomCheckbox">gloom</label>
+
+                <input id="vileplumeCheckbox" name="pokeCheckbox" type="checkbox" value="vileplume">
+                <label for="vileplumeCheckbox">vileplume</label>
+
+                <input id="parasCheckbox" name="pokeCheckbox" type="checkbox" value="paras">
+                <label for="parasCheckbox">paras</label>
+
+                <input id="parasectCheckbox" name="pokeCheckbox" type="checkbox" value="parasect">
+                <label for="parasectCheckbox">parasect</label>
+
+                <input id="venonatCheckbox" name="pokeCheckbox" type="checkbox" value="venonat">
+                <label for="venonatCheckbox">venonat</label>
+
+                <input id="venomothCheckbox" name="pokeCheckbox" type="checkbox" value="venomoth">
+                <label for="venomothCheckbox">venomoth</label>
+
+                <input id="diglettCheckbox" name="pokeCheckbox" type="checkbox" value="diglett">
+                <label for="diglettCheckbox">diglett</label>
+
+                <input id="dugtrioCheckbox" name="pokeCheckbox" type="checkbox" value="dugtrio">
+                <label for="dugtrioCheckbox">dugtrio</label>
+
+                <input id="meowthCheckbox" name="pokeCheckbox" type="checkbox" value="meowth">
+                <label for="meowthCheckbox">meowth</label>
+
+                <input id="persianCheckbox" name="pokeCheckbox" type="checkbox" value="persian">
+                <label for="persianCheckbox">persian</label>
+
+                <input name="pokeCheckbox" type="hidden" value="psyduck">
+                <input id="psyduckCheckbox" name="pokeCheckbox" type="checkbox" value="psyduck" checked disabled>
+                <label for="psyduckCheckbox">psyduck</label>
+
+                <input id="golduckCheckbox" name="pokeCheckbox" type="checkbox" value="golduck">
+                <label for="golduckCheckbox">golduck</label>
+
+                <input id="mankeyCheckbox" name="pokeCheckbox" type="checkbox" value="mankey">
+                <label for="mankeyCheckbox">mankey</label>
+
+                <input id="primeapeCheckbox" name="pokeCheckbox" type="checkbox" value="primeape">
+                <label for="primeapeCheckbox">primeape</label>
+
+                <input id="growlitheCheckbox" name="pokeCheckbox" type="checkbox" value="growlithe">
+                <label for="growlitheCheckbox">growlithe</label>
+
+                <input id="arcanineCheckbox" name="pokeCheckbox" type="checkbox" value="arcanine">
+                <label for="arcanineCheckbox">arcanine</label>
+
+                <input id="poliwagCheckbox" name="pokeCheckbox" type="checkbox" value="poliwag">
+                <label for="poliwagCheckbox">poliwag</label>
+
+                <input id="poliwhirlCheckbox" name="pokeCheckbox" type="checkbox" value="poliwhirl">
+                <label for="poliwhirlCheckbox">poliwhirl</label>
+
+                <input id="poliwrathCheckbox" name="pokeCheckbox" type="checkbox" value="poliwrath">
+                <label for="poliwrathCheckbox">poliwrath</label>
+
+                <input id="abraCheckbox" name="pokeCheckbox" type="checkbox" value="abra">
+                <label for="abraCheckbox">abra</label>
+
+                <input id="kadabraCheckbox" name="pokeCheckbox" type="checkbox" value="kadabra">
+                <label for="kadabraCheckbox">kadabra</label>
+
+                <input id="alakazamCheckbox" name="pokeCheckbox" type="checkbox" value="alakazam">
+                <label for="alakazamCheckbox">alakazam</label>
+
+                <input id="machopCheckbox" name="pokeCheckbox" type="checkbox" value="machop">
+                <label for="machopCheckbox">machop</label>
+
+                <input id="machokeCheckbox" name="pokeCheckbox" type="checkbox" value="machoke">
+                <label for="machokeCheckbox">machoke</label>
+
+                <input id="machampCheckbox" name="pokeCheckbox" type="checkbox" value="machamp">
+                <label for="machampCheckbox">machamp</label>
+
+                <input id="bellsproutCheckbox" name="pokeCheckbox" type="checkbox" value="bellsprout">
+                <label for="bellsproutCheckbox">bellsprout</label>
+
+                <input id="weepinbellCheckbox" name="pokeCheckbox" type="checkbox" value="weepinbell">
+                <label for="weepinbellCheckbox">weepinbell</label>
+
+                <input id="victreebelCheckbox" name="pokeCheckbox" type="checkbox" value="victreebel">
+                <label for="victreebelCheckbox">victreebel</label>
+
+                <input id="tentacoolCheckbox" name="pokeCheckbox" type="checkbox" value="tentacool">
+                <label for="tentacoolCheckbox">tentacool</label>
+
+                <input id="tentacruelCheckbox" name="pokeCheckbox" type="checkbox" value="tentacruel">
+                <label for="tentacruelCheckbox">tentacruel</label>
+
+                <input id="geodudeCheckbox" name="pokeCheckbox" type="checkbox" value="geodude">
+                <label for="geodudeCheckbox">geodude</label>
+
+                <input id="gravelerCheckbox" name="pokeCheckbox" type="checkbox" value="graveler">
+                <label for="gravelerCheckbox">graveler</label>
+
+                <input id="golemCheckbox" name="pokeCheckbox" type="checkbox" value="golem">
+                <label for="golemCheckbox">golem</label>
+
+                <input id="ponytaCheckbox" name="pokeCheckbox" type="checkbox" value="ponyta">
+                <label for="ponytaCheckbox">ponyta</label>
+
+                <input id="rapidashCheckbox" name="pokeCheckbox" type="checkbox" value="rapidash">
+                <label for="rapidashCheckbox">rapidash</label>
+
+                <input id="slowpokeCheckbox" name="pokeCheckbox" type="checkbox" value="slowpoke">
+                <label for="slowpokeCheckbox">slowpoke</label>
+
+                <input id="slowbroCheckbox" name="pokeCheckbox" type="checkbox" value="slowbro">
+                <label for="slowbroCheckbox">slowbro</label>
+
+                <input id="magnemiteCheckbox" name="pokeCheckbox" type="checkbox" value="magnemite">
+                <label for="magnemiteCheckbox">magnemite</label>
+
+                <input id="magnetonCheckbox" name="pokeCheckbox" type="checkbox" value="magneton">
+                <label for="magnetonCheckbox">magneton</label>
+
+                <input id="farfetchdCheckbox" name="pokeCheckbox" type="checkbox" value="farfetchd">
+                <label for="farfetchdCheckbox">farfetchd</label>
+
+                <input id="doduoCheckbox" name="pokeCheckbox" type="checkbox" value="doduo">
+                <label for="doduoCheckbox">doduo</label>
+
+                <input id="dodrioCheckbox" name="pokeCheckbox" type="checkbox" value="dodrio">
+                <label for="dodrioCheckbox">dodrio</label>
+
+                <input id="seelCheckbox" name="pokeCheckbox" type="checkbox" value="seel">
+                <label for="seelCheckbox">seel</label>
+
+                <input id="dewgongCheckbox" name="pokeCheckbox" type="checkbox" value="dewgong">
+                <label for="dewgongCheckbox">dewgong</label>
+
+                <input id="grimerCheckbox" name="pokeCheckbox" type="checkbox" value="grimer">
+                <label for="grimerCheckbox">grimer</label>
+
+                <input id="mukCheckbox" name="pokeCheckbox" type="checkbox" value="muk">
+                <label for="mukCheckbox">muk</label>
+
+                <input id="shellderCheckbox" name="pokeCheckbox" type="checkbox" value="shellder">
+                <label for="shellderCheckbox">shellder</label>
+
+                <input id="cloysterCheckbox" name="pokeCheckbox" type="checkbox" value="cloyster">
+                <label for="cloysterCheckbox">cloyster</label>
+
+                <input id="gastlyCheckbox" name="pokeCheckbox" type="checkbox" value="gastly">
+                <label for="gastlyCheckbox">gastly</label>
+
+                <input id="haunterCheckbox" name="pokeCheckbox" type="checkbox" value="haunter">
+                <label for="haunterCheckbox">haunter</label>
+
+                <input id="gengarCheckbox" name="pokeCheckbox" type="checkbox" value="gengar">
+                <label for="gengarCheckbox">gengar</label>
+
+                <input id="onixCheckbox" name="pokeCheckbox" type="checkbox" value="onix">
+                <label for="onixCheckbox">onix</label>
+
+                <input id="drowzeeCheckbox" name="pokeCheckbox" type="checkbox" value="drowzee">
+                <label for="drowzeeCheckbox">drowzee</label>
+
+                <input id="hypnoCheckbox" name="pokeCheckbox" type="checkbox" value="hypno">
+                <label for="hypnoCheckbox">hypno</label>
+
+                <input id="krabbyCheckbox" name="pokeCheckbox" type="checkbox" value="krabby">
+                <label for="krabbyCheckbox">krabby</label>
+
+                <input id="kinglerCheckbox" name="pokeCheckbox" type="checkbox" value="kingler">
+                <label for="kinglerCheckbox">kingler</label>
+
+                <input id="voltorbCheckbox" name="pokeCheckbox" type="checkbox" value="voltorb">
+                <label for="voltorbCheckbox">voltorb</label>
+
+                <input id="electrodeCheckbox" name="pokeCheckbox" type="checkbox" value="electrode">
+                <label for="electrodeCheckbox">electrode</label>
+
+                <input id="exeggcuteCheckbox" name="pokeCheckbox" type="checkbox" value="exeggcute">
+                <label for="exeggcuteCheckbox">exeggcute</label>
+
+                <input id="exeggutorCheckbox" name="pokeCheckbox" type="checkbox" value="exeggutor">
+                <label for="exeggutorCheckbox">exeggutor</label>
+
+                <input id="cuboneCheckbox" name="pokeCheckbox" type="checkbox" value="cubone">
+                <label for="cuboneCheckbox">cubone</label>
+
+                <input id="marowakCheckbox" name="pokeCheckbox" type="checkbox" value="marowak">
+                <label for="marowakCheckbox">marowak</label>
+
+                <input id="hitmonleeCheckbox" name="pokeCheckbox" type="checkbox" value="hitmonlee">
+                <label for="hitmonleeCheckbox">hitmonlee</label>
+
+                <input id="hitmonchanCheckbox" name="pokeCheckbox" type="checkbox" value="hitmonchan">
+                <label for="hitmonchanCheckbox">hitmonchan</label>
+
+                <input id="lickitungCheckbox" name="pokeCheckbox" type="checkbox" value="lickitung">
+                <label for="lickitungCheckbox">lickitung</label>
+
+                <input id="koffingCheckbox" name="pokeCheckbox" type="checkbox" value="koffing">
+                <label for="koffingCheckbox">koffing</label>
+
+                <input id="weezingCheckbox" name="pokeCheckbox" type="checkbox" value="weezing">
+                <label for="weezingCheckbox">weezing</label>
+
+                <input id="rhyhornCheckbox" name="pokeCheckbox" type="checkbox" value="rhyhorn">
+                <label for="rhyhornCheckbox">rhyhorn</label>
+
+                <input id="rhydonCheckbox" name="pokeCheckbox" type="checkbox" value="rhydon">
+                <label for="rhydonCheckbox">rhydon</label>
+
+                <input id="chanseyCheckbox" name="pokeCheckbox" type="checkbox" value="chansey">
+                <label for="chanseyCheckbox">chansey</label>
+
+                <input id="tangelaCheckbox" name="pokeCheckbox" type="checkbox" value="tangela">
+                <label for="tangelaCheckbox">tangela</label>
+
+                <input id="kangaskhanCheckbox" name="pokeCheckbox" type="checkbox" value="kangaskhan">
+                <label for="kangaskhanCheckbox">kangaskhan</label>
+
+                <input id="horseaCheckbox" name="pokeCheckbox" type="checkbox" value="horsea">
+                <label for="horseaCheckbox">horsea</label>
+
+                <input id="seadraCheckbox" name="pokeCheckbox" type="checkbox" value="seadra">
+                <label for="seadraCheckbox">seadra</label>
+
+                <input id="goldeenCheckbox" name="pokeCheckbox" type="checkbox" value="goldeen">
+                <label for="goldeenCheckbox">goldeen</label>
+
+                <input id="seakingCheckbox" name="pokeCheckbox" type="checkbox" value="seaking">
+                <label for="seakingCheckbox">seaking</label>
+
+                <input id="staryuCheckbox" name="pokeCheckbox" type="checkbox" value="staryu">
+                <label for="staryuCheckbox">staryu</label>
+
+                <input id="starmieCheckbox" name="pokeCheckbox" type="checkbox" value="starmie">
+                <label for="starmieCheckbox">starmie</label>
+
+                <input id="mr-mimeCheckbox" name="pokeCheckbox" type="checkbox" value="mr-mime">
+                <label for="mr-mimeCheckbox">mr-mime</label>
+
+                <input id="scytherCheckbox" name="pokeCheckbox" type="checkbox" value="scyther">
+                <label for="scytherCheckbox">scyther</label>
+
+                <input id="jynxCheckbox" name="pokeCheckbox" type="checkbox" value="jynx">
+                <label for="jynxCheckbox">jynx</label>
+
+                <input id="electabuzzCheckbox" name="pokeCheckbox" type="checkbox" value="electabuzz">
+                <label for="electabuzzCheckbox">electabuzz</label>
+
+                <input id="magmarCheckbox" name="pokeCheckbox" type="checkbox" value="magmar">
+                <label for="magmarCheckbox">magmar</label>
+
+                <input id="pinsirCheckbox" name="pokeCheckbox" type="checkbox" value="pinsir">
+                <label for="pinsirCheckbox">pinsir</label>
+
+                <input id="taurosCheckbox" name="pokeCheckbox" type="checkbox" value="tauros">
+                <label for="taurosCheckbox">tauros</label>
+
+                <input id="magikarpCheckbox" name="pokeCheckbox" type="checkbox" value="magikarp">
+                <label for="magikarpCheckbox">magikarp</label>
+
+                <input id="gyaradosCheckbox" name="pokeCheckbox" type="checkbox" value="gyarados">
+                <label for="gyaradosCheckbox">gyarados</label>
+
+                <input id="laprasCheckbox" name="pokeCheckbox" type="checkbox" value="lapras">
+                <label for="laprasCheckbox">lapras</label>
+
+                <input id="dittoCheckbox" name="pokeCheckbox" type="checkbox" value="ditto">
+                <label for="dittoCheckbox">ditto</label>
+
+                <input id="eeveeCheckbox" name="pokeCheckbox" type="checkbox" value="eevee">
+                <label for="eeveeCheckbox">eevee</label>
+
+                <input id="vaporeonCheckbox" name="pokeCheckbox" type="checkbox" value="vaporeon">
+                <label for="vaporeonCheckbox">vaporeon</label>
+
+                <input id="jolteonCheckbox" name="pokeCheckbox" type="checkbox" value="jolteon">
+                <label for="jolteonCheckbox">jolteon</label>
+
+                <input id="flareonCheckbox" name="pokeCheckbox" type="checkbox" value="flareon">
+                <label for="flareonCheckbox">flareon</label>
+
+                <input id="porygonCheckbox" name="pokeCheckbox" type="checkbox" value="porygon">
+                <label for="porygonCheckbox">porygon</label>
+
+                <input id="omanyteCheckbox" name="pokeCheckbox" type="checkbox" value="omanyte">
+                <label for="omanyteCheckbox">omanyte</label>
+
+                <input id="omastarCheckbox" name="pokeCheckbox" type="checkbox" value="omastar">
+                <label for="omastarCheckbox">omastar</label>
+
+                <input id="kabutoCheckbox" name="pokeCheckbox" type="checkbox" value="kabuto">
+                <label for="kabutoCheckbox">kabuto</label>
+
+                <input id="kabutopsCheckbox" name="pokeCheckbox" type="checkbox" value="kabutops">
+                <label for="kabutopsCheckbox">kabutops</label>
+
+                <input id="aerodactylCheckbox" name="pokeCheckbox" type="checkbox" value="aerodactyl">
+                <label for="aerodactylCheckbox">aerodactyl</label>
+
+                <input id="snorlaxCheckbox" name="pokeCheckbox" type="checkbox" value="snorlax">
+                <label for="snorlaxCheckbox">snorlax</label>
+
+                <input id="articunoCheckbox" name="pokeCheckbox" type="checkbox" value="articuno">
+                <label for="articunoCheckbox">articuno</label>
+
+                <input id="zapdosCheckbox" name="pokeCheckbox" type="checkbox" value="zapdos">
+                <label for="zapdosCheckbox">zapdos</label>
+
+                <input id="moltresCheckbox" name="pokeCheckbox" type="checkbox" value="moltres">
+                <label for="moltresCheckbox">moltres</label>
+
+                <input id="dratiniCheckbox" name="pokeCheckbox" type="checkbox" value="dratini">
+                <label for="dratiniCheckbox">dratini</label>
+
+                <input id="dragonairCheckbox" name="pokeCheckbox" type="checkbox" value="dragonair">
+                <label for="dragonairCheckbox">dragonair</label>
+
+                <input id="dragoniteCheckbox" name="pokeCheckbox" type="checkbox" value="dragonite">
+                <label for="dragoniteCheckbox">dragonite</label>
+
+                <input id="mewtwoCheckbox" name="pokeCheckbox" type="checkbox" value="mewtwo">
+                <label for="mewtwoCheckbox">mewtwo</label>
+
+                <input id="mewCheckbox" name="pokeCheckbox" type="checkbox" value="mew">
+                <label for="mewCheckbox">mew</label>
+
+            </fieldset>
+
+
+            <fieldset>
+                <legend>¿Cúal es tu pokemon inicial?</legend>
+
+                <input id="squirtleRadio" name="pokeRadio" type="Radio" value="squirtle">
+                <label for="squirtleRadio">squirtle</label>
+
+                <input id="bulbasaurRadio" name="pokeRadio" type="Radio" value="bulbasaur">
+                <label for="bulbasaurRadio">bulbasaur</label>
+
+                <input id="charmanderRadio" name="pokeRadio" type="Radio" value="charmander">
+                <label for="charmanderRadio">charmander</label>
+            </fieldset>
+
+
+            <select name="pokeSelect" id="pokeSelect">
+                <option value="charmander">charmander</option>
+                <option value="squirtle">squirtle</option>
+                <option value="bulbasaur">bulbasaur</option>
+            </select>
+
+            <label for="chapaText">Porque Psyduck es el mejor pokemon? Desarrolla tu respuesta:</label>
+            <textarea name="chapa" id="chapaText"></textarea>
+
+            <label for="">Sube tu foto de psyduck mejor que tengas
+                <input type="file">
+            </label>
+
+        </form>
+
+    </main>
+</body>
+
+</html>
