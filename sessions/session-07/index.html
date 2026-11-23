@@ -1,0 +1,1609 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo de Inputs</title>
+
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Formulario de ejemplo con tipos de input</h1>
+      <p>
+        Ejemplo completo para practicar radios, checkboxes, color, fecha y otros
+        tipos.
+      </p>
+
+      <!-- <form action="https://httpbin.org/post" method="POST" target="_blank"> -->
+      <form method="GET">
+        <section class="card">
+          <h2>Datos basicos</h2>
+          <div class="grid">
+            <div>
+              <label for="nombre">Nombre</label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Ash Ketchum"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="ash@kanto.com"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                minlength="6"
+              />
+            </div>
+
+            <div>
+              <label for="telefono">Telefono</label>
+              <input
+                type="tel"
+                id="telefono"
+                name="telefono"
+                placeholder="600123123"
+              />
+            </div>
+
+            <div>
+              <label for="web">Web</label>
+              <input
+                type="url"
+                id="web"
+                name="web"
+                placeholder="https://miweb.com"
+              />
+            </div>
+
+            <div>
+              <label for="edad">Edad</label>
+              <input
+                type="number"
+                id="edad"
+                name="edad"
+                min="1"
+                max="120"
+                value="18"
+              />
+            </div>
+
+            <div>
+              <label for="search">Buscar Pokemon</label>
+              <input
+                type="search"
+                id="search"
+                name="search"
+                placeholder="Pikachu"
+              />
+            </div>
+
+            <div>
+              <label for="avatar">Foto de perfil</label>
+              <input type="file" id="avatar" name="avatar" accept="image/*" />
+            </div>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>Seleccion inicial y preferencias</h2>
+
+          <fieldset>
+            <legend>Pokemon inicial (radio button)</legend>
+            <div class="row-inline">
+              <label
+                ><input
+                  type="radio"
+                  name="inicial"
+                  value="charmander"
+                  required
+                />
+                Charmander</label
+              >
+              <label
+                ><input type="radio" name="inicial" value="squirtle" />
+                Squirtle</label
+              >
+              <label
+                ><input type="radio" name="inicial" value="bulbasaur" />
+                Bulbasaur</label
+              >
+            </div>
+          </fieldset>
+
+          <div class="grid">
+            <div>
+              <label for="fav-color">Color favorito</label>
+              <input
+                type="color"
+                id="fav-color"
+                name="fav_color"
+                value="#00aaff"
+              />
+            </div>
+
+            <div>
+              <label for="fecha">Fecha de inicio</label>
+              <input type="date" id="fecha" name="fecha_inicio" />
+            </div>
+
+            <div>
+              <label for="hora">Hora de entrenamiento</label>
+              <input type="time" id="hora" name="hora_entrenamiento" />
+            </div>
+
+            <div>
+              <label for="fecha-hora">Fecha y hora torneo</label>
+              <input
+                type="datetime-local"
+                id="fecha-hora"
+                name="torneo_datetime"
+              />
+            </div>
+
+            <div>
+              <label for="mes">Mes favorito</label>
+              <input type="month" id="mes" name="mes_favorito" />
+            </div>
+
+            <div>
+              <label for="semana">Semana de liga</label>
+              <input type="week" id="semana" name="semana_liga" />
+            </div>
+
+            <div>
+              <label for="nivel">Nivel de entrenador (range)</label>
+              <input
+                type="range"
+                id="nivel"
+                name="nivel_entrenador"
+                min="1"
+                max="100"
+                value="35"
+              />
+            </div>
+
+            <div>
+              <label for="region">Region</label>
+              <select id="region" name="region">
+                <option value="kanto">Kanto</option>
+                <option value="johto">Johto</option>
+                <option value="hoenn">Hoenn</option>
+                <option value="sinnoh">Sinnoh</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="objetivo">Objetivo (datalist)</label>
+              <input
+                list="objetivos"
+                id="objetivo"
+                name="objetivo"
+                placeholder="Elige o escribe"
+              />
+              <datalist id="objetivos">
+                <option value="Completar Pokedex"></option>
+                <option value="Ganar medallas"></option>
+                <option value="Entrenar competitivo"></option>
+              </datalist>
+            </div>
+
+            <div>
+              <label
+                ><input type="checkbox" name="acepta_terminos" required />
+                Acepto terminos</label
+              >
+            </div>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>Checkboxes: 151 Pokemon de Kanto</h2>
+          <p class="help">Marca los Pokemon que ya has capturado.</p>
+          <div class="pokemon-list">
+            <label class="pokemon-item" for="pokemon-001"
+              ><input
+                type="checkbox"
+                id="pokemon-001"
+                name="capturados"
+                value="Bulbasaur"
+              />
+              #001 Bulbasaur</label
+            >
+            <label class="pokemon-item" for="pokemon-002"
+              ><input
+                type="checkbox"
+                id="pokemon-002"
+                name="capturados"
+                value="Ivysaur"
+              />
+              #002 Ivysaur</label
+            >
+            <label class="pokemon-item" for="pokemon-003"
+              ><input
+                type="checkbox"
+                id="pokemon-003"
+                name="capturados"
+                value="Venusaur"
+              />
+              #003 Venusaur</label
+            >
+            <label class="pokemon-item" for="pokemon-004"
+              ><input
+                type="checkbox"
+                id="pokemon-004"
+                name="capturados"
+                value="Charmander"
+              />
+              #004 Charmander</label
+            >
+            <label class="pokemon-item" for="pokemon-005"
+              ><input
+                type="checkbox"
+                id="pokemon-005"
+                name="capturados"
+                value="Charmeleon"
+              />
+              #005 Charmeleon</label
+            >
+            <label class="pokemon-item" for="pokemon-006"
+              ><input
+                type="checkbox"
+                id="pokemon-006"
+                name="capturados"
+                value="Charizard"
+              />
+              #006 Charizard</label
+            >
+            <label class="pokemon-item" for="pokemon-007"
+              ><input
+                type="checkbox"
+                id="pokemon-007"
+                name="capturados"
+                value="Squirtle"
+              />
+              #007 Squirtle</label
+            >
+            <label class="pokemon-item" for="pokemon-008"
+              ><input
+                type="checkbox"
+                id="pokemon-008"
+                name="capturados"
+                value="Wartortle"
+              />
+              #008 Wartortle</label
+            >
+            <label class="pokemon-item" for="pokemon-009"
+              ><input
+                type="checkbox"
+                id="pokemon-009"
+                name="capturados"
+                value="Blastoise"
+              />
+              #009 Blastoise</label
+            >
+            <label class="pokemon-item" for="pokemon-010"
+              ><input
+                type="checkbox"
+                id="pokemon-010"
+                name="capturados"
+                value="Caterpie"
+              />
+              #010 Caterpie</label
+            >
+            <label class="pokemon-item" for="pokemon-011"
+              ><input
+                type="checkbox"
+                id="pokemon-011"
+                name="capturados"
+                value="Metapod"
+              />
+              #011 Metapod</label
+            >
+            <label class="pokemon-item" for="pokemon-012"
+              ><input
+                type="checkbox"
+                id="pokemon-012"
+                name="capturados"
+                value="Butterfree"
+              />
+              #012 Butterfree</label
+            >
+            <label class="pokemon-item" for="pokemon-013"
+              ><input
+                type="checkbox"
+                id="pokemon-013"
+                name="capturados"
+                value="Weedle"
+              />
+              #013 Weedle</label
+            >
+            <label class="pokemon-item" for="pokemon-014"
+              ><input
+                type="checkbox"
+                id="pokemon-014"
+                name="capturados"
+                value="Kakuna"
+              />
+              #014 Kakuna</label
+            >
+            <label class="pokemon-item" for="pokemon-015"
+              ><input
+                type="checkbox"
+                id="pokemon-015"
+                name="capturados"
+                value="Beedrill"
+              />
+              #015 Beedrill</label
+            >
+            <label class="pokemon-item" for="pokemon-016"
+              ><input
+                type="checkbox"
+                id="pokemon-016"
+                name="capturados"
+                value="Pidgey"
+              />
+              #016 Pidgey</label
+            >
+            <label class="pokemon-item" for="pokemon-017"
+              ><input
+                type="checkbox"
+                id="pokemon-017"
+                name="capturados"
+                value="Pidgeotto"
+              />
+              #017 Pidgeotto</label
+            >
+            <label class="pokemon-item" for="pokemon-018"
+              ><input
+                type="checkbox"
+                id="pokemon-018"
+                name="capturados"
+                value="Pidgeot"
+              />
+              #018 Pidgeot</label
+            >
+            <label class="pokemon-item" for="pokemon-019"
+              ><input
+                type="checkbox"
+                id="pokemon-019"
+                name="capturados"
+                value="Rattata"
+              />
+              #019 Rattata</label
+            >
+            <label class="pokemon-item" for="pokemon-020"
+              ><input
+                type="checkbox"
+                id="pokemon-020"
+                name="capturados"
+                value="Raticate"
+              />
+              #020 Raticate</label
+            >
+            <label class="pokemon-item" for="pokemon-021"
+              ><input
+                type="checkbox"
+                id="pokemon-021"
+                name="capturados"
+                value="Spearow"
+              />
+              #021 Spearow</label
+            >
+            <label class="pokemon-item" for="pokemon-022"
+              ><input
+                type="checkbox"
+                id="pokemon-022"
+                name="capturados"
+                value="Fearow"
+              />
+              #022 Fearow</label
+            >
+            <label class="pokemon-item" for="pokemon-023"
+              ><input
+                type="checkbox"
+                id="pokemon-023"
+                name="capturados"
+                value="Ekans"
+              />
+              #023 Ekans</label
+            >
+            <label class="pokemon-item" for="pokemon-024"
+              ><input
+                type="checkbox"
+                id="pokemon-024"
+                name="capturados"
+                value="Arbok"
+              />
+              #024 Arbok</label
+            >
+            <label class="pokemon-item" for="pokemon-025"
+              ><input
+                type="checkbox"
+                id="pokemon-025"
+                name="capturados"
+                value="Pikachu"
+              />
+              #025 Pikachu</label
+            >
+            <label class="pokemon-item" for="pokemon-026"
+              ><input
+                type="checkbox"
+                id="pokemon-026"
+                name="capturados"
+                value="Raichu"
+              />
+              #026 Raichu</label
+            >
+            <label class="pokemon-item" for="pokemon-027"
+              ><input
+                type="checkbox"
+                id="pokemon-027"
+                name="capturados"
+                value="Sandshrew"
+              />
+              #027 Sandshrew</label
+            >
+            <label class="pokemon-item" for="pokemon-028"
+              ><input
+                type="checkbox"
+                id="pokemon-028"
+                name="capturados"
+                value="Sandslash"
+              />
+              #028 Sandslash</label
+            >
+            <label class="pokemon-item" for="pokemon-029"
+              ><input
+                type="checkbox"
+                id="pokemon-029"
+                name="capturados"
+                value="Nidoran-F"
+              />
+              #029 Nidoran-F</label
+            >
+            <label class="pokemon-item" for="pokemon-030"
+              ><input
+                type="checkbox"
+                id="pokemon-030"
+                name="capturados"
+                value="Nidorina"
+              />
+              #030 Nidorina</label
+            >
+            <label class="pokemon-item" for="pokemon-031"
+              ><input
+                type="checkbox"
+                id="pokemon-031"
+                name="capturados"
+                value="Nidoqueen"
+              />
+              #031 Nidoqueen</label
+            >
+            <label class="pokemon-item" for="pokemon-032"
+              ><input
+                type="checkbox"
+                id="pokemon-032"
+                name="capturados"
+                value="Nidoran-M"
+              />
+              #032 Nidoran-M</label
+            >
+            <label class="pokemon-item" for="pokemon-033"
+              ><input
+                type="checkbox"
+                id="pokemon-033"
+                name="capturados"
+                value="Nidorino"
+              />
+              #033 Nidorino</label
+            >
+            <label class="pokemon-item" for="pokemon-034"
+              ><input
+                type="checkbox"
+                id="pokemon-034"
+                name="capturados"
+                value="Nidoking"
+              />
+              #034 Nidoking</label
+            >
+            <label class="pokemon-item" for="pokemon-035"
+              ><input
+                type="checkbox"
+                id="pokemon-035"
+                name="capturados"
+                value="Clefairy"
+              />
+              #035 Clefairy</label
+            >
+            <label class="pokemon-item" for="pokemon-036"
+              ><input
+                type="checkbox"
+                id="pokemon-036"
+                name="capturados"
+                value="Clefable"
+              />
+              #036 Clefable</label
+            >
+            <label class="pokemon-item" for="pokemon-037"
+              ><input
+                type="checkbox"
+                id="pokemon-037"
+                name="capturados"
+                value="Vulpix"
+              />
+              #037 Vulpix</label
+            >
+            <label class="pokemon-item" for="pokemon-038"
+              ><input
+                type="checkbox"
+                id="pokemon-038"
+                name="capturados"
+                value="Ninetales"
+              />
+              #038 Ninetales</label
+            >
+            <label class="pokemon-item" for="pokemon-039"
+              ><input
+                type="checkbox"
+                id="pokemon-039"
+                name="capturados"
+                value="Jigglypuff"
+              />
+              #039 Jigglypuff</label
+            >
+            <label class="pokemon-item" for="pokemon-040"
+              ><input
+                type="checkbox"
+                id="pokemon-040"
+                name="capturados"
+                value="Wigglytuff"
+              />
+              #040 Wigglytuff</label
+            >
+            <label class="pokemon-item" for="pokemon-041"
+              ><input
+                type="checkbox"
+                id="pokemon-041"
+                name="capturados"
+                value="Zubat"
+              />
+              #041 Zubat</label
+            >
+            <label class="pokemon-item" for="pokemon-042"
+              ><input
+                type="checkbox"
+                id="pokemon-042"
+                name="capturados"
+                value="Golbat"
+              />
+              #042 Golbat</label
+            >
+            <label class="pokemon-item" for="pokemon-043"
+              ><input
+                type="checkbox"
+                id="pokemon-043"
+                name="capturados"
+                value="Oddish"
+              />
+              #043 Oddish</label
+            >
+            <label class="pokemon-item" for="pokemon-044"
+              ><input
+                type="checkbox"
+                id="pokemon-044"
+                name="capturados"
+                value="Gloom"
+              />
+              #044 Gloom</label
+            >
+            <label class="pokemon-item" for="pokemon-045"
+              ><input
+                type="checkbox"
+                id="pokemon-045"
+                name="capturados"
+                value="Vileplume"
+              />
+              #045 Vileplume</label
+            >
+            <label class="pokemon-item" for="pokemon-046"
+              ><input
+                type="checkbox"
+                id="pokemon-046"
+                name="capturados"
+                value="Paras"
+              />
+              #046 Paras</label
+            >
+            <label class="pokemon-item" for="pokemon-047"
+              ><input
+                type="checkbox"
+                id="pokemon-047"
+                name="capturados"
+                value="Parasect"
+              />
+              #047 Parasect</label
+            >
+            <label class="pokemon-item" for="pokemon-048"
+              ><input
+                type="checkbox"
+                id="pokemon-048"
+                name="capturados"
+                value="Venonat"
+              />
+              #048 Venonat</label
+            >
+            <label class="pokemon-item" for="pokemon-049"
+              ><input
+                type="checkbox"
+                id="pokemon-049"
+                name="capturados"
+                value="Venomoth"
+              />
+              #049 Venomoth</label
+            >
+            <label class="pokemon-item" for="pokemon-050"
+              ><input
+                type="checkbox"
+                id="pokemon-050"
+                name="capturados"
+                value="Diglett"
+              />
+              #050 Diglett</label
+            >
+            <label class="pokemon-item" for="pokemon-051"
+              ><input
+                type="checkbox"
+                id="pokemon-051"
+                name="capturados"
+                value="Dugtrio"
+              />
+              #051 Dugtrio</label
+            >
+            <label class="pokemon-item" for="pokemon-052"
+              ><input
+                type="checkbox"
+                id="pokemon-052"
+                name="capturados"
+                value="Meowth"
+              />
+              #052 Meowth</label
+            >
+            <label class="pokemon-item" for="pokemon-053"
+              ><input
+                type="checkbox"
+                id="pokemon-053"
+                name="capturados"
+                value="Persian"
+              />
+              #053 Persian</label
+            >
+
+            <label class="pokemon-item" for="pokemon-054"
+              ><input
+                type="checkbox"
+                id="pokemon-054"
+                name="capturados"
+                value="Psyduck"
+                checked
+                disabled
+              />
+              #054 Psyduck</label
+            >
+
+            <!-- hidden input for Psyduck, ui is checked always and disabled 
+            the hidden input is used to submit the value of the checkbox 
+            because the ui is disabled and cannot submit its value directly -->
+            <input type="hidden" name="capturados" value="Psyduck" />
+
+            <label class="pokemon-item" for="pokemon-055"
+              ><input
+                type="checkbox"
+                id="pokemon-055"
+                name="capturados"
+                value="Golduck"
+              />
+              #055 Golduck</label
+            >
+            <label class="pokemon-item" for="pokemon-056"
+              ><input
+                type="checkbox"
+                id="pokemon-056"
+                name="capturados"
+                value="Mankey"
+              />
+              #056 Mankey</label
+            >
+            <label class="pokemon-item" for="pokemon-057"
+              ><input
+                type="checkbox"
+                id="pokemon-057"
+                name="capturados"
+                value="Primeape"
+              />
+              #057 Primeape</label
+            >
+            <label class="pokemon-item" for="pokemon-058"
+              ><input
+                type="checkbox"
+                id="pokemon-058"
+                name="capturados"
+                value="Growlithe"
+              />
+              #058 Growlithe</label
+            >
+            <label class="pokemon-item" for="pokemon-059"
+              ><input
+                type="checkbox"
+                id="pokemon-059"
+                name="capturados"
+                value="Arcanine"
+              />
+              #059 Arcanine</label
+            >
+            <label class="pokemon-item" for="pokemon-060"
+              ><input
+                type="checkbox"
+                id="pokemon-060"
+                name="capturados"
+                value="Poliwag"
+              />
+              #060 Poliwag</label
+            >
+            <label class="pokemon-item" for="pokemon-061"
+              ><input
+                type="checkbox"
+                id="pokemon-061"
+                name="capturados"
+                value="Poliwhirl"
+              />
+              #061 Poliwhirl</label
+            >
+            <label class="pokemon-item" for="pokemon-062"
+              ><input
+                type="checkbox"
+                id="pokemon-062"
+                name="capturados"
+                value="Poliwrath"
+              />
+              #062 Poliwrath</label
+            >
+            <label class="pokemon-item" for="pokemon-063"
+              ><input
+                type="checkbox"
+                id="pokemon-063"
+                name="capturados"
+                value="Abra"
+              />
+              #063 Abra</label
+            >
+            <label class="pokemon-item" for="pokemon-064"
+              ><input
+                type="checkbox"
+                id="pokemon-064"
+                name="capturados"
+                value="Kadabra"
+              />
+              #064 Kadabra</label
+            >
+            <label class="pokemon-item" for="pokemon-065"
+              ><input
+                type="checkbox"
+                id="pokemon-065"
+                name="capturados"
+                value="Alakazam"
+              />
+              #065 Alakazam</label
+            >
+            <label class="pokemon-item" for="pokemon-066"
+              ><input
+                type="checkbox"
+                id="pokemon-066"
+                name="capturados"
+                value="Machop"
+              />
+              #066 Machop</label
+            >
+            <label class="pokemon-item" for="pokemon-067"
+              ><input
+                type="checkbox"
+                id="pokemon-067"
+                name="capturados"
+                value="Machoke"
+              />
+              #067 Machoke</label
+            >
+            <label class="pokemon-item" for="pokemon-068"
+              ><input
+                type="checkbox"
+                id="pokemon-068"
+                name="capturados"
+                value="Machamp"
+              />
+              #068 Machamp</label
+            >
+            <label class="pokemon-item" for="pokemon-069"
+              ><input
+                type="checkbox"
+                id="pokemon-069"
+                name="capturados"
+                value="Bellsprout"
+              />
+              #069 Bellsprout</label
+            >
+            <label class="pokemon-item" for="pokemon-070"
+              ><input
+                type="checkbox"
+                id="pokemon-070"
+                name="capturados"
+                value="Weepinbell"
+              />
+              #070 Weepinbell</label
+            >
+            <label class="pokemon-item" for="pokemon-071"
+              ><input
+                type="checkbox"
+                id="pokemon-071"
+                name="capturados"
+                value="Victreebel"
+              />
+              #071 Victreebel</label
+            >
+            <label class="pokemon-item" for="pokemon-072"
+              ><input
+                type="checkbox"
+                id="pokemon-072"
+                name="capturados"
+                value="Tentacool"
+              />
+              #072 Tentacool</label
+            >
+            <label class="pokemon-item" for="pokemon-073"
+              ><input
+                type="checkbox"
+                id="pokemon-073"
+                name="capturados"
+                value="Tentacruel"
+              />
+              #073 Tentacruel</label
+            >
+            <label class="pokemon-item" for="pokemon-074"
+              ><input
+                type="checkbox"
+                id="pokemon-074"
+                name="capturados"
+                value="Geodude"
+              />
+              #074 Geodude</label
+            >
+            <label class="pokemon-item" for="pokemon-075"
+              ><input
+                type="checkbox"
+                id="pokemon-075"
+                name="capturados"
+                value="Graveler"
+              />
+              #075 Graveler</label
+            >
+            <label class="pokemon-item" for="pokemon-076"
+              ><input
+                type="checkbox"
+                id="pokemon-076"
+                name="capturados"
+                value="Golem"
+              />
+              #076 Golem</label
+            >
+            <label class="pokemon-item" for="pokemon-077"
+              ><input
+                type="checkbox"
+                id="pokemon-077"
+                name="capturados"
+                value="Ponyta"
+              />
+              #077 Ponyta</label
+            >
+            <label class="pokemon-item" for="pokemon-078"
+              ><input
+                type="checkbox"
+                id="pokemon-078"
+                name="capturados"
+                value="Rapidash"
+              />
+              #078 Rapidash</label
+            >
+            <label class="pokemon-item" for="pokemon-079"
+              ><input
+                type="checkbox"
+                id="pokemon-079"
+                name="capturados"
+                value="Slowpoke"
+              />
+              #079 Slowpoke</label
+            >
+            <label class="pokemon-item" for="pokemon-080"
+              ><input
+                type="checkbox"
+                id="pokemon-080"
+                name="capturados"
+                value="Slowbro"
+              />
+              #080 Slowbro</label
+            >
+            <label class="pokemon-item" for="pokemon-081"
+              ><input
+                type="checkbox"
+                id="pokemon-081"
+                name="capturados"
+                value="Magnemite"
+              />
+              #081 Magnemite</label
+            >
+            <label class="pokemon-item" for="pokemon-082"
+              ><input
+                type="checkbox"
+                id="pokemon-082"
+                name="capturados"
+                value="Magneton"
+              />
+              #082 Magneton</label
+            >
+            <label class="pokemon-item" for="pokemon-083"
+              ><input
+                type="checkbox"
+                id="pokemon-083"
+                name="capturados"
+                value="Farfetchd"
+              />
+              #083 Farfetchd</label
+            >
+            <label class="pokemon-item" for="pokemon-084"
+              ><input
+                type="checkbox"
+                id="pokemon-084"
+                name="capturados"
+                value="Doduo"
+              />
+              #084 Doduo</label
+            >
+            <label class="pokemon-item" for="pokemon-085"
+              ><input
+                type="checkbox"
+                id="pokemon-085"
+                name="capturados"
+                value="Dodrio"
+              />
+              #085 Dodrio</label
+            >
+            <label class="pokemon-item" for="pokemon-086"
+              ><input
+                type="checkbox"
+                id="pokemon-086"
+                name="capturados"
+                value="Seel"
+              />
+              #086 Seel</label
+            >
+            <label class="pokemon-item" for="pokemon-087"
+              ><input
+                type="checkbox"
+                id="pokemon-087"
+                name="capturados"
+                value="Dewgong"
+              />
+              #087 Dewgong</label
+            >
+            <label class="pokemon-item" for="pokemon-088"
+              ><input
+                type="checkbox"
+                id="pokemon-088"
+                name="capturados"
+                value="Grimer"
+              />
+              #088 Grimer</label
+            >
+            <label class="pokemon-item" for="pokemon-089"
+              ><input
+                type="checkbox"
+                id="pokemon-089"
+                name="capturados"
+                value="Muk"
+              />
+              #089 Muk</label
+            >
+            <label class="pokemon-item" for="pokemon-090"
+              ><input
+                type="checkbox"
+                id="pokemon-090"
+                name="capturados"
+                value="Shellder"
+              />
+              #090 Shellder</label
+            >
+            <label class="pokemon-item" for="pokemon-091"
+              ><input
+                type="checkbox"
+                id="pokemon-091"
+                name="capturados"
+                value="Cloyster"
+              />
+              #091 Cloyster</label
+            >
+            <label class="pokemon-item" for="pokemon-092"
+              ><input
+                type="checkbox"
+                id="pokemon-092"
+                name="capturados"
+                value="Gastly"
+              />
+              #092 Gastly</label
+            >
+            <label class="pokemon-item" for="pokemon-093"
+              ><input
+                type="checkbox"
+                id="pokemon-093"
+                name="capturados"
+                value="Haunter"
+              />
+              #093 Haunter</label
+            >
+            <label class="pokemon-item" for="pokemon-094"
+              ><input
+                type="checkbox"
+                id="pokemon-094"
+                name="capturados"
+                value="Gengar"
+              />
+              #094 Gengar</label
+            >
+            <label class="pokemon-item" for="pokemon-095"
+              ><input
+                type="checkbox"
+                id="pokemon-095"
+                name="capturados"
+                value="Onix"
+              />
+              #095 Onix</label
+            >
+            <label class="pokemon-item" for="pokemon-096"
+              ><input
+                type="checkbox"
+                id="pokemon-096"
+                name="capturados"
+                value="Drowzee"
+              />
+              #096 Drowzee</label
+            >
+            <label class="pokemon-item" for="pokemon-097"
+              ><input
+                type="checkbox"
+                id="pokemon-097"
+                name="capturados"
+                value="Hypno"
+              />
+              #097 Hypno</label
+            >
+            <label class="pokemon-item" for="pokemon-098"
+              ><input
+                type="checkbox"
+                id="pokemon-098"
+                name="capturados"
+                value="Krabby"
+              />
+              #098 Krabby</label
+            >
+            <label class="pokemon-item" for="pokemon-099"
+              ><input
+                type="checkbox"
+                id="pokemon-099"
+                name="capturados"
+                value="Kingler"
+              />
+              #099 Kingler</label
+            >
+            <label class="pokemon-item" for="pokemon-100"
+              ><input
+                type="checkbox"
+                id="pokemon-100"
+                name="capturados"
+                value="Voltorb"
+              />
+              #100 Voltorb</label
+            >
+            <label class="pokemon-item" for="pokemon-101"
+              ><input
+                type="checkbox"
+                id="pokemon-101"
+                name="capturados"
+                value="Electrode"
+              />
+              #101 Electrode</label
+            >
+            <label class="pokemon-item" for="pokemon-102"
+              ><input
+                type="checkbox"
+                id="pokemon-102"
+                name="capturados"
+                value="Exeggcute"
+              />
+              #102 Exeggcute</label
+            >
+            <label class="pokemon-item" for="pokemon-103"
+              ><input
+                type="checkbox"
+                id="pokemon-103"
+                name="capturados"
+                value="Exeggutor"
+              />
+              #103 Exeggutor</label
+            >
+            <label class="pokemon-item" for="pokemon-104"
+              ><input
+                type="checkbox"
+                id="pokemon-104"
+                name="capturados"
+                value="Cubone"
+              />
+              #104 Cubone</label
+            >
+            <label class="pokemon-item" for="pokemon-105"
+              ><input
+                type="checkbox"
+                id="pokemon-105"
+                name="capturados"
+                value="Marowak"
+              />
+              #105 Marowak</label
+            >
+            <label class="pokemon-item" for="pokemon-106"
+              ><input
+                type="checkbox"
+                id="pokemon-106"
+                name="capturados"
+                value="Hitmonlee"
+              />
+              #106 Hitmonlee</label
+            >
+            <label class="pokemon-item" for="pokemon-107"
+              ><input
+                type="checkbox"
+                id="pokemon-107"
+                name="capturados"
+                value="Hitmonchan"
+              />
+              #107 Hitmonchan</label
+            >
+            <label class="pokemon-item" for="pokemon-108"
+              ><input
+                type="checkbox"
+                id="pokemon-108"
+                name="capturados"
+                value="Lickitung"
+              />
+              #108 Lickitung</label
+            >
+            <label class="pokemon-item" for="pokemon-109"
+              ><input
+                type="checkbox"
+                id="pokemon-109"
+                name="capturados"
+                value="Koffing"
+              />
+              #109 Koffing</label
+            >
+            <label class="pokemon-item" for="pokemon-110"
+              ><input
+                type="checkbox"
+                id="pokemon-110"
+                name="capturados"
+                value="Weezing"
+              />
+              #110 Weezing</label
+            >
+            <label class="pokemon-item" for="pokemon-111"
+              ><input
+                type="checkbox"
+                id="pokemon-111"
+                name="capturados"
+                value="Rhyhorn"
+              />
+              #111 Rhyhorn</label
+            >
+            <label class="pokemon-item" for="pokemon-112"
+              ><input
+                type="checkbox"
+                id="pokemon-112"
+                name="capturados"
+                value="Rhydon"
+              />
+              #112 Rhydon</label
+            >
+            <label class="pokemon-item" for="pokemon-113"
+              ><input
+                type="checkbox"
+                id="pokemon-113"
+                name="capturados"
+                value="Chansey"
+              />
+              #113 Chansey</label
+            >
+            <label class="pokemon-item" for="pokemon-114"
+              ><input
+                type="checkbox"
+                id="pokemon-114"
+                name="capturados"
+                value="Tangela"
+              />
+              #114 Tangela</label
+            >
+            <label class="pokemon-item" for="pokemon-115"
+              ><input
+                type="checkbox"
+                id="pokemon-115"
+                name="capturados"
+                value="Kangaskhan"
+              />
+              #115 Kangaskhan</label
+            >
+            <label class="pokemon-item" for="pokemon-116"
+              ><input
+                type="checkbox"
+                id="pokemon-116"
+                name="capturados"
+                value="Horsea"
+              />
+              #116 Horsea</label
+            >
+            <label class="pokemon-item" for="pokemon-117"
+              ><input
+                type="checkbox"
+                id="pokemon-117"
+                name="capturados"
+                value="Seadra"
+              />
+              #117 Seadra</label
+            >
+            <label class="pokemon-item" for="pokemon-118"
+              ><input
+                type="checkbox"
+                id="pokemon-118"
+                name="capturados"
+                value="Goldeen"
+              />
+              #118 Goldeen</label
+            >
+            <label class="pokemon-item" for="pokemon-119"
+              ><input
+                type="checkbox"
+                id="pokemon-119"
+                name="capturados"
+                value="Seaking"
+              />
+              #119 Seaking</label
+            >
+            <label class="pokemon-item" for="pokemon-120"
+              ><input
+                type="checkbox"
+                id="pokemon-120"
+                name="capturados"
+                value="Staryu"
+              />
+              #120 Staryu</label
+            >
+            <label class="pokemon-item" for="pokemon-121"
+              ><input
+                type="checkbox"
+                id="pokemon-121"
+                name="capturados"
+                value="Starmie"
+              />
+              #121 Starmie</label
+            >
+            <label class="pokemon-item" for="pokemon-122"
+              ><input
+                type="checkbox"
+                id="pokemon-122"
+                name="capturados"
+                value="Mr-Mime"
+              />
+              #122 Mr-Mime</label
+            >
+            <label class="pokemon-item" for="pokemon-123"
+              ><input
+                type="checkbox"
+                id="pokemon-123"
+                name="capturados"
+                value="Scyther"
+              />
+              #123 Scyther</label
+            >
+            <label class="pokemon-item" for="pokemon-124"
+              ><input
+                type="checkbox"
+                id="pokemon-124"
+                name="capturados"
+                value="Jynx"
+              />
+              #124 Jynx</label
+            >
+            <label class="pokemon-item" for="pokemon-125"
+              ><input
+                type="checkbox"
+                id="pokemon-125"
+                name="capturados"
+                value="Electabuzz"
+              />
+              #125 Electabuzz</label
+            >
+            <label class="pokemon-item" for="pokemon-126"
+              ><input
+                type="checkbox"
+                id="pokemon-126"
+                name="capturados"
+                value="Magmar"
+              />
+              #126 Magmar</label
+            >
+            <label class="pokemon-item" for="pokemon-127"
+              ><input
+                type="checkbox"
+                id="pokemon-127"
+                name="capturados"
+                value="Pinsir"
+              />
+              #127 Pinsir</label
+            >
+            <label class="pokemon-item" for="pokemon-128"
+              ><input
+                type="checkbox"
+                id="pokemon-128"
+                name="capturados"
+                value="Tauros"
+              />
+              #128 Tauros</label
+            >
+            <label class="pokemon-item" for="pokemon-129"
+              ><input
+                type="checkbox"
+                id="pokemon-129"
+                name="capturados"
+                value="Magikarp"
+              />
+              #129 Magikarp</label
+            >
+            <label class="pokemon-item" for="pokemon-130"
+              ><input
+                type="checkbox"
+                id="pokemon-130"
+                name="capturados"
+                value="Gyarados"
+              />
+              #130 Gyarados</label
+            >
+            <label class="pokemon-item" for="pokemon-131"
+              ><input
+                type="checkbox"
+                id="pokemon-131"
+                name="capturados"
+                value="Lapras"
+              />
+              #131 Lapras</label
+            >
+            <label class="pokemon-item" for="pokemon-132"
+              ><input
+                type="checkbox"
+                id="pokemon-132"
+                name="capturados"
+                value="Ditto"
+              />
+              #132 Ditto</label
+            >
+            <label class="pokemon-item" for="pokemon-133"
+              ><input
+                type="checkbox"
+                id="pokemon-133"
+                name="capturados"
+                value="Eevee"
+              />
+              #133 Eevee</label
+            >
+            <label class="pokemon-item" for="pokemon-134"
+              ><input
+                type="checkbox"
+                id="pokemon-134"
+                name="capturados"
+                value="Vaporeon"
+              />
+              #134 Vaporeon</label
+            >
+            <label class="pokemon-item" for="pokemon-135"
+              ><input
+                type="checkbox"
+                id="pokemon-135"
+                name="capturados"
+                value="Jolteon"
+              />
+              #135 Jolteon</label
+            >
+            <label class="pokemon-item" for="pokemon-136"
+              ><input
+                type="checkbox"
+                id="pokemon-136"
+                name="capturados"
+                value="Flareon"
+              />
+              #136 Flareon</label
+            >
+            <label class="pokemon-item" for="pokemon-137"
+              ><input
+                type="checkbox"
+                id="pokemon-137"
+                name="capturados"
+                value="Porygon"
+              />
+              #137 Porygon</label
+            >
+            <label class="pokemon-item" for="pokemon-138"
+              ><input
+                type="checkbox"
+                id="pokemon-138"
+                name="capturados"
+                value="Omanyte"
+              />
+              #138 Omanyte</label
+            >
+            <label class="pokemon-item" for="pokemon-139"
+              ><input
+                type="checkbox"
+                id="pokemon-139"
+                name="capturados"
+                value="Omastar"
+              />
+              #139 Omastar</label
+            >
+            <label class="pokemon-item" for="pokemon-140"
+              ><input
+                type="checkbox"
+                id="pokemon-140"
+                name="capturados"
+                value="Kabuto"
+              />
+              #140 Kabuto</label
+            >
+            <label class="pokemon-item" for="pokemon-141"
+              ><input
+                type="checkbox"
+                id="pokemon-141"
+                name="capturados"
+                value="Kabutops"
+              />
+              #141 Kabutops</label
+            >
+            <label class="pokemon-item" for="pokemon-142"
+              ><input
+                type="checkbox"
+                id="pokemon-142"
+                name="capturados"
+                value="Aerodactyl"
+              />
+              #142 Aerodactyl</label
+            >
+            <label class="pokemon-item" for="pokemon-143"
+              ><input
+                type="checkbox"
+                id="pokemon-143"
+                name="capturados"
+                value="Snorlax"
+              />
+              #143 Snorlax</label
+            >
+            <label class="pokemon-item" for="pokemon-144"
+              ><input
+                type="checkbox"
+                id="pokemon-144"
+                name="capturados"
+                value="Articuno"
+              />
+              #144 Articuno</label
+            >
+            <label class="pokemon-item" for="pokemon-145"
+              ><input
+                type="checkbox"
+                id="pokemon-145"
+                name="capturados"
+                value="Zapdos"
+              />
+              #145 Zapdos</label
+            >
+            <label class="pokemon-item" for="pokemon-146"
+              ><input
+                type="checkbox"
+                id="pokemon-146"
+                name="capturados"
+                value="Moltres"
+              />
+              #146 Moltres</label
+            >
+            <label class="pokemon-item" for="pokemon-147"
+              ><input
+                type="checkbox"
+                id="pokemon-147"
+                name="capturados"
+                value="Dratini"
+              />
+              #147 Dratini</label
+            >
+            <label class="pokemon-item" for="pokemon-148"
+              ><input
+                type="checkbox"
+                id="pokemon-148"
+                name="capturados"
+                value="Dragonair"
+              />
+              #148 Dragonair</label
+            >
+            <label class="pokemon-item" for="pokemon-149"
+              ><input
+                type="checkbox"
+                id="pokemon-149"
+                name="capturados"
+                value="Dragonite"
+              />
+              #149 Dragonite</label
+            >
+            <label class="pokemon-item" for="pokemon-150"
+              ><input
+                type="checkbox"
+                id="pokemon-150"
+                name="capturados"
+                value="Mewtwo"
+              />
+              #150 Mewtwo</label
+            >
+            <label class="pokemon-item" for="pokemon-151"
+              ><input
+                type="checkbox"
+                id="pokemon-151"
+                name="capturados"
+                value="Mew"
+              />
+              #151 Mew</label
+            >
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>Mas campos utiles</h2>
+          <label for="notas">Notas</label>
+          <textarea
+            id="notas"
+            name="notas"
+            rows="4"
+            placeholder="Escribe observaciones..."
+          ></textarea>
+
+          <input type="hidden" name="curso" value="session-07-forms" />
+        </section>
+
+        <button class="submit-btn" type="submit">Enviar formulario</button>
+      </form>
+    </main>
+  </body>
+</html>
