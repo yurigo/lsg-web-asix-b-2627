@@ -122,3 +122,34 @@ ejercicio de la sesión y a la documentación correspondiente de MDN.
   [grid-area](https://developer.mozilla.org/es/docs/Web/CSS/grid-area),
   [grid-column](https://developer.mozilla.org/es/docs/Web/CSS/grid-column),
   [grid-row](https://developer.mozilla.org/es/docs/Web/CSS/grid-row).
+
+## Sesión 7: formularios HTML
+
+[Ejercicio: `session-07`](sessions/session-07/)
+
+- **Etiquetas y atributos:** formulario con `form`, `section`, `fieldset` y
+  `legend`; controles `input`, `select`, `datalist`, `textarea` y `button`.
+  Los campos se relacionan con su texto mediante `label` y `for` o mediante
+  contenedores asociados a cada control.
+- **Tipos de input:** se practican texto (`text`), correo (`email`), contraseña
+  (`password`), teléfono (`tel`), URL (`url`), número (`number`), búsqueda
+  (`search`), archivo (`file`), fecha y hora (`date`, `time`, `datetime-local`,
+  `month`, `week`), color (`color`), rango (`range`) y oculto (`hidden`).
+  Los campos múltiples usan `radio` y `checkbox`.
+- **Configuración y validación:** el formulario usa `method="GET"` y atributos
+  como `name`, `value`, `placeholder`, `required`, `min`, `max`, `minlength`,
+  `accept` y `maxlength`. El ejercicio incluye una lista de los 151 Pokémon de
+  Kanto como ejemplo de checkboxes.
+- **Estilos:** se combina una hoja de reinicio con reglas propias; se usan
+  variables CSS, Grid responsivo, Flexbox para elementos en línea, bordes,
+  espaciado, sombras y estilos para tarjetas y controles de formulario.
+- **MDN:** [formularios](https://developer.mozilla.org/es/docs/Learn_web_development/Extensions/Forms),
+  [elemento `form`](https://developer.mozilla.org/es/docs/Web/HTML/Element/form),
+  [elemento `input`](https://developer.mozilla.org/es/docs/Web/HTML/Element/input),
+  [tipos de input](https://developer.mozilla.org/es/docs/Learn_web_development/Extensions/Forms/HTML5_input_types),
+  [radio y checkbox](https://developer.mozilla.org/es/docs/Web/HTML/Element/input/checkbox),
+  [validación de formularios](https://developer.mozilla.org/es/docs/Learn_web_development/Extensions/Forms/Form_validation),
+  [`label`](https://developer.mozilla.org/es/docs/Web/HTML/Element/label),
+  [`select`](https://developer.mozilla.org/es/docs/Web/HTML/Element/select),
+  [`datalist`](https://developer.mozilla.org/es/docs/Web/HTML/Element/datalist),
+  [`textarea`](https://developer.mozilla.org/es/docs/Web/HTML/Element/textarea).
